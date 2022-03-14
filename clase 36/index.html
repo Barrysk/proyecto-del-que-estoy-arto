@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Multiplayer Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+ 
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+    <script src="js/Form.js"></script>
+    <script src="js/Game.js"></script>
+    <script src="js/Player.js"></script>
+    <script>
+      // Configuración de Firebase de tu aplicación web
+      //Agregar aquí
+      // Inicializar Firebase
+  const firebaseConfig = {
+  apiKey: "AIzaSyAI_qyDYmuhaxbERFIQ0yIqMQgKnTd3rfg",
+  authDomain: "carreras-multijugador-d7d11.firebaseapp.com",
+  databaseURL:"https://carreras-multijugador-d7d11-default-rtdb.firebaseio.com/",
+  projectId: "carreras-multijugador-d7d11",
+  storageBucket: "carreras-multijugador-d7d11.appspot.com",
+  messagingSenderId: "148845716370",
+  appId: "1:148845716370:web:fc7c9960ab768346c1174b"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+  </body>
+</html>
